@@ -1,6 +1,6 @@
 class Book < ApplicationRecord
   belongs_to :user
-  has_many :book_comments, dependent: :destroy #コメント
+  has_many :book_cments, dependent: :destroy #コメント
   has_many :favorites, dependent: :destroy #イイね
 
   validates :title,presence:true
